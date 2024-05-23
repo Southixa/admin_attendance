@@ -8,6 +8,8 @@ import { SidebarData } from './SidebarData'
 import Navbar from "./Navbar";
 import { NavLink } from "react-router-dom";
 import Submenu from "./Submenu";
+import SideBarSubItem from "./SideBarSubItem";
+import SideBarItem from "./SideBarItem";
 
 const Sidebar = ({ children }) => {
 
@@ -25,9 +27,13 @@ const Sidebar = ({ children }) => {
           {/* Menu */}
           {
             SidebarData.map((item, index) => {
-              return <div>
-                <Submenu item={item} id={index} />
-              </div>
+              return (
+                (item.subNav)
+                ?
+                <SideBarSubItem key={index} item={item} />
+                :
+                <SideBarItem key={index} item={item} />
+              )
 
             })
           }

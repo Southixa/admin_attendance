@@ -14,7 +14,7 @@ export const SidebarData = [
     {
         title: "ຈັດການຂໍ້ມູນພື້ນຖານ",
         icon: <MdIcons.MdManageAccounts />,
-        dropdownKey: 1,
+        dropDownKey: 1,
         iconOpen: <FaIcons.FaArrowDown />,
         iconClose: <FaIcons.FaArrowRight />,
         subNav: [
@@ -34,7 +34,7 @@ export const SidebarData = [
     {
         title: "ຈັດການຂໍ້ມູນການຮຽນ - ສອນ",
         icon: <MdIcons.MdManageAccounts />,
-        dropdownKey: 2,
+        dropDownKey: 2,
         iconOpen: <FaIcons.FaArrowDown />,
         iconClose: <FaIcons.FaArrowRight />,
         subNav: [
