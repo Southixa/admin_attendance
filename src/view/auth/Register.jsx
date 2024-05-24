@@ -21,6 +21,7 @@ const Register = () => {
         setLoading(false);
         return;
       }
+
       
       setErrorEmail("");
       if (password === "") {
